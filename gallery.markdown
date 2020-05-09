@@ -20,7 +20,7 @@ menupos: 4
         <img src='assets/images/h5.jpg'>
         <img src='assets/images/h8.jpg'>
         <img src='assets/images/anad.jpg'>
-        <img src='assets/images/restore.jpg'>
+        <img src='assets/images/restoreme.jpg'>
     </article>
     <article class="col-4">
         <img src='assets/images/h1.jpg'>
@@ -33,7 +33,7 @@ menupos: 4
         <img src='assets/images/h3.jpg'>
         <img src='assets/images/h6.jpg'>
         <img src='assets/images/Liberty1964.jpg'>
-        <img src='assets/images/h9.jpg'>
+        <img src='assets/images/h99.jpg'>
         <img src='assets/images/h10.jpg'>
     </article>
 </section>
