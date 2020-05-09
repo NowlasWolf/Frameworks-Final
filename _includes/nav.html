@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light static-top thenav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav navcenter mx-auto ">
+        {% assign sorted = site.html_pages | sort: "menupos" %}
+        {% for item in sorted %}
+          {% if item.menutag != "none" and item.url != "/404.html" %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{item.url}}">{{item.menutag}}<span class="sr-only">(current)</span></a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+</nav>

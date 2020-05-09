@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    {%- include head.html -%}
+    <body>
+        <div class="landing">
+            {%- include header.html -%}
+            {%- include nav.html -%}
+            {%- include landerjumbo.html -%}
+        </div>
+        <main>
+            <div class = "container-fluid main-content">
+                {{content}}
+            </div>
+        </main>
+        {%- include footer.html -%}
+    </body>
+
+
+</html>

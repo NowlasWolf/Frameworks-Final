@@ -1,0 +1,206 @@
+$theme-colors:(
+    "primary": #1faeb2
+);
+
+body{
+    width: 100%;
+    /*background-color: #1faeb2;*/
+    background-color: white;
+}
+
+h1{
+    color: #1faeb2;
+}
+h2{
+    color: #1faeb2;
+}
+h3{
+    color: #1faeb2;
+}
+
+header{
+    background-color: white;
+    height: 15vh;
+    padding-top: 1em;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    a{
+        height: 100%;
+        img{
+            height: 100%;
+            clear: both;
+        }
+    }
+    p{
+        color: #1faeb2;
+    }
+}
+
+.headsubtext{
+    width: 50%;
+}
+
+.lefthead{
+    float: left;
+    padding-right: 1%;
+}
+.righthead{
+    float: right;
+    padding-left: 1%;
+}
+
+main{
+    background-color: white;
+    width: 100%;
+}
+
+.main-content{
+    width: 70%;
+    margin: 0 15%;
+}
+
+footer{
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    background: white;
+    p{
+        margin: 0;
+    }
+}
+
+.qkcen{
+    text-align: center;
+}
+
+.thenav{
+    height: 5%;
+    background-color: white;
+    @media screen {
+        height: auto;
+    }
+}
+.landing{
+    height: 100vh;
+    background-color: white;
+}
+#thecarousel{
+    position: relative;
+    height: 80%;
+
+}
+
+@mixin jumbos{
+    height: 100%;
+    border-radius: 0;
+    
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+#jumbo1{
+
+    @include jumbos;
+    background-image:  linear-gradient(rgba(255,255,255,1) 1%, rgba(255,255,255,0)3% 70%, rgba(255,255,255,1) 80%), url(../images/Liberty1964.jpg);
+}
+#jumbo2{
+    @include jumbos;
+    background-image:  linear-gradient(rgba(255,255,255,1) 1%, rgba(255,255,255,0)3% 70%, rgba(255,255,255,1) 80%), url(../images/bwliberty.jpg);
+}
+#jumbo3{
+    @include jumbos;
+    background-image:  linear-gradient(rgba(255,255,255,1) 1%, rgba(255,255,255,0)3% 70%, rgba(255,255,255,1) 80%), url(../images/liberty_streetscene-1972-l.jpg);
+}
+.carousel-inner{
+    height: 100%;
+}
+.carousel-item{
+    height: 100%;
+}
+.jumbocontent{
+    padding: 2em 3em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: black;
+}
+
+.jumbotron{
+    padding: 0 !important;
+}
+.newlead{
+    text-align: center;
+}
+
+.carousel-indicators li{
+    background-color: black;
+}
+
+.slice{
+    article{
+        
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+        h2{
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+        }
+    }
+    margin-top: 3em;
+    border-bottom: 3px solid grey;
+    padding-bottom: 3em;
+
+}
+
+.slicenoborder{
+    article{
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+    margin-top: 3em;
+    padding-bottom: 3em;
+}
+
+
+.lefttext{
+    text-align: right;
+}
+
+.contenthead{
+    article h1{
+        font-size: 5em;
+    }
+    text-align: center;
+    
+    border-bottom: 3px solid grey;
+    padding-bottom: 1em;
+    
+}
+
+.justunderlineit{
+    padding-bottom: .5em;
+    border-bottom: 3px solid grey;
+}
+
+.btn-primary{
+    background-color:#1faeb2;
+    border: #1faeb2;
+}
+
+.btn-primary:hover{
+    background-color:#e4ce61;
+    color: black;
+}
