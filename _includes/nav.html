@@ -8,7 +8,7 @@
         {% for item in sorted %}
           {% if item.menutag != "none" and item.url != "/404.html" %}
           <li class="nav-item">
-            <a class="nav-link" href="{{item.url}}">{{item.menutag}}<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{item.url | relative_url }}">{{item.menutag}}<span class="sr-only">(current)</span></a>
           </li>
           {% endif %}
         {% endfor %}
